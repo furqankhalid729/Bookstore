@@ -1,0 +1,1 @@
+web: gunicorn BookStore_project.wgsi --log-file -

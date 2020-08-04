@@ -1,0 +1,18 @@
+
+<!DOCTYPE html>
+{% extends 'base.html' %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{{object.Name}}}{% endblock title %}</title>
+</head>
+<body>
+{% block content%}
+<div class="book-detail">
+    <h2><a href="">{{ object.Name }}</a></h2>
+    <p>Author: {{ object.author }}</p>
+    <p>Price: {{ object.Price }}</p>
+</div>
+{% endblock content%}
+</body>
+</html>
